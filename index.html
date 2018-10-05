@@ -1,4 +1,3 @@
-
 <html>
 	<head>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -9,7 +8,7 @@
 		<nav class="navbar navbad-default" id="top-nav">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#">🖐 Campus Recruitment System</a>
+					<a class="navbar-brand" href="#">ðŸ– Campus Recruitment System</a>
 				</div>
 				<ul id="list1" class="nav navbar-nav">
 					<li class="active"><a href="#">Home</a></li>
@@ -24,11 +23,45 @@
 
 		
 		<div class="well text-center" id="main">
-  			<img class="img-responsive " src="CSS/Image/banner.jpg"></img> 
+  			<img class="img-responsive " src="CSS/Image/c3.jpg" height="200" width="700"></img> 
   		</div>
 		
+		<div class="well text-center" id="frm1">
+		<form action="/input-login-information">
+    <div>
+    <label for="usrnm"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="usrnm" required>
+    </div>
+    <div>
+    <label for="pswrd"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="pswrd" required>
+    </div>
+    
+	<div>
+	 <select>
+  <option label="Student">student</option>
+  <option label="Company">company</option>
+  <option label="Admin">admin</option>
+     </select>
+    
+    <button type="submit">Login</button>
+	 </div>
+	 <div>
+    <label for="rmbr">
+      <input type="checkbox" checked="checked" name="remember" id="rmbr"> Remember me
+    </label>
+	 </div>
+
+   <div>
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw"><a href="#">Forgot password?</a></span>
+   </div>
+</form>
+</div>
+	
+		
 	</body>
-	<footer>
+	 <footer>
 		<nav class="navbar navbad-default" id="bottom-nav">
 			<div class="container-fluid">
 				<div id="col1" >
@@ -48,14 +81,17 @@
 				</div>
 				
 				<div id="col3" class=" container-fluid">
+				
 					<ul id="blist3" >
 						<li><i class="fa fa-facebook fa-2x" ><a href='#'></a></i></li>
 						<li><i class="fa fa-twitter fa-2x"><a href='#'></a></i></li>
 						<li><i class="fa fa-instagram fa-2x"><a href='#'></a></i></li>
 						<li><i class="fa fa-linkedin fa-2x"><a href='#'></a></i></li>
 					</ul>
-					<p id="lic">site design / logo (c) Company_Name Inc.<br> licensed under Company_Name inc. </p>
-					
+					<ul>
+					<!--<p id="lic">site design / logo (c) Company_Name Inc.<br> licensed under Company_Name inc. </p>-->
+					<li id="blist4">site design / logo (c) Company_Name Inc.<br> licensed under Company_Name inc.</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
