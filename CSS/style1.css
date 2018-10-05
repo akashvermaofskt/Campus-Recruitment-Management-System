@@ -5,7 +5,7 @@
 #bottom-nav{
 		background : #0B0B3B;	
 		bottom: -20;
-		position: fixed;
+		//position: fixed;
 		overflow: hidden;
 		width: 100%;
 }
@@ -28,10 +28,10 @@
 
 #col3{
 	//background: blue;
-	width :300px;
+	width :220px;
 	height: 100px;
 	float : right;
-	margin : 50px;
+	margin : 10px;
 }
 	
 #blist1{
@@ -39,12 +39,16 @@
 	margin-top: 15px;
 }
 
-#blist3 li{
+ #blist3 li{
 	display : inline;
 	size: 100px;
 	padding: 6px;
 	cursor : pointer;
 	color:white;
+}
+#blist4 {
+	color:white;
+
 }
 
 #lic{
@@ -66,6 +70,12 @@ body{
   margin-bottom:40px;
 }
 
+#frm1{
+	background: #AED5F9;
+	margin-right:500px;
+	margin-left:500px;
+   // margin-bottom:200px;
+}
 
 #main{
 	margin-right: 200px;
