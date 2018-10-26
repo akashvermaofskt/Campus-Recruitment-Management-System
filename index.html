@@ -23,40 +23,32 @@
 
 		
 		<div class="well text-center" id="main">
-  			<img class="img-responsive " src="CSS/Image/c3.jpg" height="200" width="700"></img> 
+  			<img class="img-responsive " src="CSS/Image/c3.jpg" height="200" width="700">
   		</div>
 		
-		<div class="well text-center" id="frm1">
-		<form action="/input-login-information">
-    <div>
-    <label for="usrnm"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" id="usrnm" required>
-    </div>
-    <div>
-    <label for="pswrd"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="pswrd" required>
-    </div>
-    
-	<div>
-	 <select>
-  <option label="Student">student</option>
-  <option label="Company">company</option>
-  <option label="Admin">admin</option>
-     </select>
-    
-    <button type="submit">Login</button>
-	 </div>
-	 <div>
-    <label for="rmbr">
-      <input type="checkbox" checked="checked" name="remember" id="rmbr"> Remember me
-    </label>
-	 </div>
+	<div class="well container-fluid text-center" id="frm1">
+		<form action="login.php" method="POST">
+			<div>
+				<label for="usrnm"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="uname" id="usrnm" required>
+			</div>
+			<div>
+				<label for="pswrd"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="pwd" id="pswrd" required>
+			</div>
+			<div>
+				<select name="type">
+					<option value="student">Student</option>
+					<option value="company">Company</option>
+					<option value="admin">Admin</option>
+				</select>
+				
+				<button type="submit">Login</button>
+				<BR>
+				<span class="psw"><a href="#">Forgot password?</a></span>
+			</div>
 
-   <div>
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw"><a href="#">Forgot password?</a></span>
-   </div>
-</form>
+		</form>
 </div>
 	
 		

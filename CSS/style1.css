@@ -5,13 +5,13 @@
 #bottom-nav{
 		background : #0B0B3B;	
 		bottom: -20;
-		//position: fixed;
+		/*position: fixed;*/
 		overflow: hidden;
 		width: 100%;
 }
 
 #col1{
-	//background: red;
+	/*background: red;*/
 	width :400px;
 	height: 100px;
 	float : left;
@@ -19,7 +19,7 @@
 }
 
 #col2{
-	//background: green;
+	/*background: green;*/
 	width :400px;
 	height: 100px;
 	float : left;
@@ -27,7 +27,7 @@
 }
 
 #col3{
-	//background: blue;
+	/*background: blue;*/
 	width :220px;
 	height: 100px;
 	float : right;
@@ -62,26 +62,22 @@ a{
 	color: white;	
 }
 
-.col-md-4{
-	//display : inline;
-	//	width :300px;
-	//	height: 300px;
-}
 
 body{
 	background: #557399;
-	//margin-top:40px;
+	/*margin-top:40px;
   //margin-left:20px;
-  //margin-right:20px;
+  //margin-right:20px;*/
   margin-bottom:40px;
   padding-top:50px;
 }
 
 #frm1{
 	background: #AED5F9;
-	margin-right:500px;
-	margin-left:500px;
-   // margin-bottom:200px;
+	/*margin-right:500px;
+	margin-left:500px;*/
+   height:auto;
+   width: 300px;
 }
 
 #main{
