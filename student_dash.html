@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/style1.css">
+		<nav class="navbar navbar-fixed-top" id="top-nav">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Campus Recruitment System</a>
+				</div>
+				<ul id="list1" class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Page 1</a></li>
+					<li><a href="#">Page 2</a></li>
+					<li><a href="#">Page 3</a></li>
+				</ul>
+			</div>
+		</nav>
+	</head>
+	
+	<body>
+		<div class=" container-fluid" id="dash">
+		  <div class="row">
+		    <div class="well col-sm-3" style="background-color: #AED4F1 ; height:450px">
+		      <ul>
+			 <img class="img-responsive " src="CSS/Image/c1.jpg" height="120px" width="120px" align="center" style="border-radius:50%"></img> 
+			  <br>
+			  <br>
+			 <ul>
+			    <li style="font-size:18px" align="left">Name:</li>
+			    <li style="font-size:18px">Email:   </li>
+				<li style="font-size:18px">Department: </li>
+				<li style="font-size:18px">Batch: </li>
+			</ul>
+			</div>
+		   <div class="well col-sm-4" style="background-color:#AED4F1; height:450px">
+		      <h3>DETAILS ABOUT THE COMPANY</h3>
+		    </div>
+		    <div class="well col-sm-4" style="background-color:#AED4F1; height:450px">
+			    <h2>LIST OF COMPANIES</h2>
+				<p>Click for more details about the company</p>
+		      <div class="table-responsive table-bordered" >            
+				  <table class="table table-hover">
+				    <thead>
+				      <tr>
+				        <th>Name</th>
+				        <th>Job profile</th>
+				        <th>Eligiblity</th>
+						<th>Status</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>Infosys</td>
+				        <td>Software Tester</td>
+				        <td>B.Tech(CSE/IT)</td>
+						<td><button type="submit">Apply</button></td>
+				      </tr>
+				      <tr>
+				        <td>TCS</td>
+				        <td>Assistant Software Developer</td>
+				        <td>B.Tech(CSE)</td>
+						<td><button type="submit">Apply</button></td>
+				      </tr>
+				      <tr>
+				        <td>WIPRO</td>
+				        <td>Database Analyst</td>
+				        <td>B.Tech(CSE/IT)</td>
+						<td><button id="b1" onclick="myFunction1()" >Apply</button></td>
+						<script>
+						function myFunction1() {
+							document.getElementById("b1").style.color = "red";
+								}
+						</script>
+
+				      </tr>
+					  
+				    </tbody>
+				  </table>
+				</div>
+		    </div>
+		  </div>
+		</div>
+		<p id="demo" onclick="myFunction()">Click me to change my text color.</p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").style.color = "red";
+}
+</script>
+
+	</body>
+
+	<footer>
+		<nav class="navbar navbad-default" id="bottom-nav">
+			<div class="container-fluid">
+				<div id="col1" >
+					<ul id="blist1">
+						<li><a href='#'>About Us</a></li>
+						<li><a href='#'>FAQs</a></li>
+						<li><a href='#'>Contact Us</a></li>
+					</ul>
+				</div>
+				
+				<div id="col2" >
+					<ul id="blist1">
+						<li><a href='#'>Privacy Policy</a></li>
+						<li><a href='#'>Legal</a></li>
+						<li><a href='#'>Work With Us</a></li>
+					</ul>
+				</div>
+				
+				<div id="col3" class=" container-fluid">
+				
+					<ul id="blist3" >
+						<li><i class="fa fa-facebook fa-2x" ><a href='#'></a></i></li>
+						<li><i class="fa fa-twitter fa-2x"><a href='#'></a></i></li>
+						<li><i class="fa fa-instagram fa-2x"><a href='#'></a></i></li>
+						<li><i class="fa fa-linkedin fa-2x"><a href='#'></a></i></li>
+					</ul>
+					<ul>
+					<!--<p id="lic">site design / logo (c) Company_Name Inc.<br> licensed under Company_Name inc. </p>-->
+					<li id="blist4">site design / logo (c) Company_Name Inc.<br> licensed under Company_Name inc.</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</footer>
+</html>
