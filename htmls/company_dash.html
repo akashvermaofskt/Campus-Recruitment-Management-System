@@ -1,0 +1,237 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/style1.css">
+		<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+		<nav class="navbar navbar-fixed-top" id="top-nav">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Campus Recruitment System</a>
+				</div>
+				<ul id="list1" class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="#">Page 1</a></li>
+					<li><a href="#">Page 2</a></li>
+					<li><a href="#">Page 3</a></li>
+				</ul>
+			</div>
+		</nav>
+	</head>
+	
+	<body>
+	 <h2 align="center">COMPANY DASHBOARD</h2>
+		<div class=" container-fluid" id="dash">
+		  <div class="row">
+		    <div class="well col-sm-4" style="background-color: #AED4F1 ; height:auto; margin:10px;">
+		      <ul>
+			 <img class="img-responsive " src="CSS/Image/c1.jpg" height="120px" width="120px" align="center" style="border-radius:50%"></img> 
+			  <br>
+			  <br>
+			  <?php
+			    $servername="localhost";
+					$username="root";
+					$password="password";
+					$dbname="project";
+					
+					$conn = new mysqli($servername,$username,$password,$dbname);
+
+					if($conn->connect_error){
+						die("Connection failed: ".$conn->connect_error);
+					}
+					$sql="Select * from companys where email=\"".$_GET['email']."\"";
+					$result = $conn->query($sql);
+					$row=$result->fetch_assoc();
+             echo"  <div class=\"table-responsive table-bordered\" >            
+				  <table class=\"table table-hover\">
+				      <tr>
+				        <th>Name</th>
+						<td>".$row['name']."</td>
+				        </tr>
+				      <tr>
+					    <th>Email</th>
+				        <td>".$row['email']."</td>
+
+				      </tr>
+					  <tr>
+					    <th>Contact No.</th>
+				        <td>".$row['phone']."</td>
+
+				      </tr>
+					  <tr>
+				        <th>Location</th>
+						<td>".$row['location']."</td>
+				        </tr>
+				      <tr>
+					    <th>C.E.O.</th>
+				        <td>".$row['ceo']."</td>
+
+				      </tr>
+					  <tr>
+					    <th>C.T.O.</th>
+				        <td>".$row['cto']."</td>
+
+				      </tr>
+					  
+				      <tr>
+				        <th>H.R.</th>
+						<td>".$row['hr']."</td>
+				        </tr>
+
+				    </tbody>
+				  </table>
+				</div>";
+				?>
+			</div>
+		   <div class="well col-sm-5" style="background-color:#AED4F1; height:auto; margin:10px;">
+		      <h3>DETAILS ABOUT THE STUDENT</h3>
+			  <img class="img-responsive " src="CSS/Image/c1.jpg" height="120px" width="120px" align="center" style="border-radius:50%"></img>
+			  <div class="table-responsive table-bordered" >            
+				  <table class="table table-hover">
+				      <tr>
+				        <th>Name</th>
+						<td>---</td>
+				        </tr>
+				      <tr>
+					    <th>Email</th>
+				        <td>---</td>
+
+				      </tr>
+					  <tr>
+					    <th>Date of Birth</th>
+				        <td>---</td>
+
+				      </tr>
+					  <tr>
+				        <th>Branch</th>
+						<td>---</td>
+				        </tr>
+				      <tr>
+					    <th>Year of Passing out</th>
+				        <td>---</td>
+
+				      </tr>
+					  <tr>
+					    <th>CPI</th>
+				        <td>---</td>
+
+				      </tr>
+					  
+				      <tr>
+				        <th>12th Percentage</th>
+						<td>---</td>
+				        </tr>
+				      <tr>
+					    <th>10th Percentage</th>
+				        <td>---</td>
+
+				      </tr>
+					  <tr>
+					    <th>Contact No.</th>
+				        <td>---</td>
+
+				      </tr>
+					  
+					  <tr>
+				        <th>Course</th>
+						<td>---</td>
+				      </tr>
+
+					  
+				    </tbody>
+				  </table>
+				</div>
+				<hr>
+                  <input type="checkbox" data-toggle="toggle" data-on="Accepted" data-off="Rejected"></td>
+				  <hr>
+				  <a href="vacancy.html">CREATE VACANCY</a>
+			  
+		    </div>
+			<div>
+			
+		    <div class="well col-sm-2" style="background-color:#AED4F1; height:auto; margin:10px;">
+			    <h2>NAME OF STUDENTS</h2>
+				<p>Click for more details about the student</p>
+				
+				<?php
+				 $servername="localhost";
+				 $username="root";
+				 $password="password";
+				 $dbname="project";
+				 
+				 $conn = new mysqli($severname,$username,$password,$dbname);
+				 
+				 if($conn->connect_error){
+				     die("Connection failed: ".$conn->connect_error);
+					 }
+					$sql="Select name from students";
+					$result=$conn->query($sql);
+					
+		
+		        echo  "<div class=\"table-responsive table-bordered\" >            
+				  <table class=\"table table-hover\">
+				    <thead>
+				      <tr>
+				        <th>Name of students</th>
+				      </tr>
+				    </thead>
+				    <tbody>";
+					
+					while($row=$result->fetch_assoc()){
+					   echo "<tr>";
+					   echo "<td>".$row['name']."</td>";
+					   echo "</tr>";
+					   }
+					   
+					  echo"</tbody>
+					        </table>
+					       </div>";
+					        
+				  ?>
+		    </div>
+		  </div>
+		</div>
+
+
+	</body>
+
+		 <footer>
+		<nav class="navbar navbad-default" id="bottom-nav">
+			<div class="container-fluid">
+				<div id="col1" >
+					<ul id="blist1">
+						<li><a href='#'>About Us</a></li>
+						<li><a href='#'>FAQs</a></li>
+						<li><a href='#'>Contact Us</a></li>
+					</ul>
+				</div>
+				
+				<div id="col2" >
+					<ul id="blist1">
+						<li><a href='#'>Privacy Policy</a></li>
+						<li><a href='#'>Legal</a></li>
+						<li><a href='#'>Work With Us</a></li>
+					</ul>
+				</div>
+				
+				<div id="col3" class=" container-fluid">
+				
+					<ul id="blist3" >
+						<li><i class="fa fa-facebook fa-2x" ><a href='#'></a></i></li>
+						<li><i class="fa fa-twitter fa-2x"><a href='#'></a></i></li>
+						<li><i class="fa fa-instagram fa-2x"><a href='#'></a></i></li>
+						<li><i class="fa fa-linkedin fa-2x"><a href='#'></a></i></li>
+					</ul>
+					<ul>
+					<!--<p id="lic">site design / logo (c) Company_Name Inc.<br> licensed under Company_Name inc. </p>-->
+					<li id="blist4">site design / logo (c) Company_Name Inc.<br> licensed under Company_Name inc.</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</footer>
+</html>

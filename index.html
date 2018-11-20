@@ -1,5 +1,9 @@
 <html>
 	<head>
+		<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Quintessential' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -8,21 +12,23 @@
 		<nav class="navbar navbar-fixed-top" id="top-nav">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#">Campus Recruitment System</a>
+					<a class="navbar-brand" style="font-family:Nova Square" href="#">Campus Recruitment Management System</a>
 				</div>
-				<ul id="list1" class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Page 1</a></li>
-					<li><a href="#">Page 2</a></li>
-					<li><a href="#">Page 3</a></li>
-				</ul>
+				
 			</div>
 		</nav>
+		
+		<script>
+			function fun(){
+				alert("Please contact admin if you have forgotten your password!");
+			}
+		</script>
 	</head>
 	<body>
 
 		
 		<div class="well text-center" id="main">
+		<h1 align="center" style="font-family:Nova Square" >CAMPUS RECRUITMENT MANAGEMENT SYSTEM </h1>
   			<img class="img-responsive " src="CSS/Image/c3.jpg" height="200" width="700">
   		</div>
 		
@@ -38,16 +44,22 @@
 			</div>
 			<div>
 				<select name="type">
-					<option value="student">Student</option>
-					<option value="company">Company</option>
-					<option value="admin">Admin</option>
+					<option value="Student">Student</option>
+					<option value="Company">Company</option>
+					<option value="Admin">Admin</option>
 				</select>
 				
 				<button type="submit">Login</button>
 				<BR>
-				<span class="psw"><a href="#">Forgot password?</a></span>
+				<span class="psw" onclick="fun()" ><a href="#">Forgot password?</a></span>
 			</div>
-
+          <div>
+		  <p>New student?
+		  <a href="register.html">register here</a></p>
+		  <p>New Company?
+		  <a href="company_register.html">register here</a></p>
+		  </div>
+		  
 		</form>
 </div>
 	

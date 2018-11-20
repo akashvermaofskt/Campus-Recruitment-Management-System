@@ -15,7 +15,8 @@
 	width :400px;
 	height: 100px;
 	float : left;
-	margin: 50px
+	margin: 50px;
+	 display: table-cell;
 }
 
 #col2{
@@ -24,6 +25,7 @@
 	height: 100px;
 	float : left;
 	margin : 50px;
+	 display: table-cell;
 }
 
 #col3{
@@ -32,6 +34,7 @@
 	height: 100px;
 	float : right;
 	margin : 10px;
+	 display: table-cell;
 }
 	
 #blist1{
@@ -97,3 +100,4 @@ body{
 img{
 	margin: 0 auto;
 }
+
